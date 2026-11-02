@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2d3a6e">
+  <title>CUBONIX</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <style>
+    /* Critical inline styles — ensures layout even if CSS file is stale-cached */
+    .drawer { display:none; position:fixed; top:0; left:0; width:300px; height:100%; z-index:999; background:#fafafa; flex-direction:column; }
+    .drawer.open { display:flex; }
+    .drawer-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:998; }
+    .drawer-overlay.open { display:block; }
+    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center; padding:20px; }
+    .modal-overlay.open { display:flex; }
+  </style>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="App.closeDrawer()"></div>
+
+  <!-- Sidebar Drawer -->
+  <nav class="drawer" id="drawer">
+    <div class="drawer-header">
+      <div class="drawer-logo">CUBONIX</div>
+      <div class="drawer-logo-bar"></div>
+    </div>
+    <div class="drawer-menu" id="drawerMenu"></div>
+    <div class="drawer-footer">
+      <span>&copy; 2026 CUBONIX. All Rights Reserved.</span>
+    </div>
+  </nav>
+
+  <!-- Main App -->
+  <header class="app-header">
+    <button class="hamburger" id="hamburgerBtn" onclick="App.toggleDrawer()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-title" id="headerTitle">CUBONIX</div>
+    <button class="info-btn" onclick="App.showInfo()">i</button>
+  </header>
+
+  <main class="app-content" id="appContent"></main>
+
+  <!-- Info Modal -->
+  <div class="modal-overlay" id="infoModal" onclick="App.closeInfo()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="infoTitle">Information</h3>
+        <button class="modal-close" onclick="App.closeInfo()">&times;</button>
+      </div>
+      <div class="modal-body" id="infoBody"></div>
+    </div>
+  </div>
+
+  <script>
+    // Unregister old service workers and clear caches on first load
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(r => r.unregister());
+      });
+      caches.keys().then(keys => {
+        keys.forEach(k => caches.delete(k));
+      });
+    }
+  </script>
+  <script src="app.js?v=4"></script>
+  <script>
+    // Re-register fresh service worker after clearing old ones
+    if ('serviceWorker' in navigator) {
+      setTimeout(() => {
+        navigator.serviceWorker.register('sw.js?v=4');
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
