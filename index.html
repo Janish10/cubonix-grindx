@@ -19,7 +19,7 @@
     .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center; padding:20px; }
     .modal-overlay.open { display:flex; }
   </style>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -71,12 +71,12 @@
       });
     }
   </script>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
   <script>
     // Re-register fresh service worker after clearing old ones
     if ('serviceWorker' in navigator) {
       setTimeout(() => {
-        navigator.serviceWorker.register('sw.js?v=4');
+        navigator.serviceWorker.register('sw.js?v=5');
       }, 1000);
     }
   </script>

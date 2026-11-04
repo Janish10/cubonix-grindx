@@ -317,17 +317,29 @@ const App = {
         </div>
         <div class="section-title">Quick Access</div>
         <div class="home-grid">
-          <div class="home-tile" onclick="App.navigateTo('grit-size')">
-            <div class="tile-icon">▦</div>
-            <div class="tile-label">Grit Size Chart</div>
-          </div>
           <div class="home-tile" onclick="App.navigateTo('wheel-speed-converter')">
             <div class="tile-icon">⦾</div>
             <div class="tile-label">Wheel Speed Converter</div>
           </div>
+          <div class="home-tile" onclick="App.navigateTo('surface-finish')">
+            <div class="tile-icon">▤</div>
+            <div class="tile-label">Surface Finish Chart</div>
+          </div>
+          <div class="home-tile" onclick="App.navigateTo('grit-size')">
+            <div class="tile-icon">▦</div>
+            <div class="tile-label">Grit Size Chart</div>
+          </div>
           <div class="home-tile" onclick="App.navigateTo('wheel-shapes')">
             <div class="tile-icon">◯</div>
             <div class="tile-label">Standard Wheel Shapes</div>
+          </div>
+          <div class="home-tile" onclick="App.navigateTo('troubleshooting')">
+            <div class="tile-icon">⚑</div>
+            <div class="tile-label">Troubleshooting</div>
+          </div>
+          <div class="home-tile" onclick="App.navigateTo('glossary')">
+            <div class="tile-icon">⊡</div>
+            <div class="tile-label">Grinding Glossary</div>
           </div>
           <div class="home-tile" onclick="App.navigateTo('q-prime')">
             <div class="tile-icon">↓</div>
@@ -336,18 +348,6 @@ const App = {
           <div class="home-tile" onclick="App.navigateTo('traverse-dressing')">
             <div class="tile-icon">◎</div>
             <div class="tile-label">Traverse Dressing</div>
-          </div>
-          <div class="home-tile" onclick="App.navigateTo('surface-finish')">
-            <div class="tile-icon">▤</div>
-            <div class="tile-label">Surface Finish Chart</div>
-          </div>
-          <div class="home-tile" onclick="App.navigateTo('glossary')">
-            <div class="tile-icon">⊡</div>
-            <div class="tile-label">Grinding Glossary</div>
-          </div>
-          <div class="home-tile" onclick="App.navigateTo('troubleshooting')">
-            <div class="tile-icon">⚑</div>
-            <div class="tile-label">Troubleshooting</div>
           </div>
           <div class="home-tile" onclick="App.navigateTo('scientific-calculator')">
             <div class="tile-icon">⌸</div>
