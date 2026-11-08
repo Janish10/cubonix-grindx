@@ -127,6 +127,40 @@ const GLOSSARY = [
   ]},
 ];
 
+const HARDNESS_DATA = [
+  {hb:800,hrc:72,hrb:null,hv:null,ts:null},{hb:780,hrc:71,hrb:null,hv:null,ts:null},{hb:760,hrc:70,hrb:null,hv:null,ts:null},
+  {hb:752,hrc:69,hrb:null,hv:null,ts:null},{hb:745,hrc:68,hrb:null,hv:null,ts:null},{hb:746,hrc:67,hrb:null,hv:null,ts:null},
+  {hb:735,hrc:66,hrb:null,hv:null,ts:null},{hb:711,hrc:65,hrb:null,hv:null,ts:null},{hb:695,hrc:64,hrb:null,hv:null,ts:null},
+  {hb:681,hrc:63,hrb:null,hv:null,ts:null},{hb:658,hrc:62,hrb:null,hv:null,ts:null},{hb:642,hrc:61,hrb:null,hv:null,ts:null},
+  {hb:627,hrc:60,hrb:null,hv:null,ts:null},{hb:613,hrc:59,hrb:null,hv:null,ts:null},{hb:601,hrc:58,hrb:null,hv:746,ts:null},
+  {hb:592,hrc:57,hrb:null,hv:727,ts:null},{hb:572,hrc:56,hrb:null,hv:694,ts:null},{hb:552,hrc:55,hrb:null,hv:649,ts:null},
+  {hb:534,hrc:54,hrb:120,hv:589,ts:null},{hb:513,hrc:53,hrb:119,hv:567,ts:null},{hb:504,hrc:52,hrb:118,hv:549,ts:null},
+  {hb:486,hrc:51,hrb:118,hv:531,ts:null},{hb:469,hrc:50,hrb:117,hv:505,ts:null},{hb:468,hrc:49,hrb:117,hv:497,ts:null},
+  {hb:456,hrc:48,hrb:116,hv:490,ts:1569},{hb:445,hrc:47,hrb:115,hv:474,ts:1520},{hb:430,hrc:46,hrb:115,hv:458,ts:1471},
+  {hb:419,hrc:45,hrb:114,hv:448,ts:1447},{hb:415,hrc:44,hrb:114,hv:438,ts:1422},{hb:402,hrc:43,hrb:114,hv:424,ts:1390},
+  {hb:388,hrc:42,hrb:113,hv:406,ts:1363},{hb:375,hrc:41,hrb:112,hv:393,ts:1314},{hb:373,hrc:40,hrb:111,hv:388,ts:1265},
+  {hb:360,hrc:39,hrb:111,hv:376,ts:1236},{hb:348,hrc:38,hrb:110,hv:361,ts:1187},{hb:341,hrc:37,hrb:109,hv:351,ts:1157},
+  {hb:331,hrc:36,hrb:109,hv:342,ts:1118},{hb:322,hrc:35,hrb:108,hv:332,ts:1089},{hb:314,hrc:34,hrb:108,hv:320,ts:1049},
+  {hb:308,hrc:33,hrb:107,hv:311,ts:1035},{hb:300,hrc:32,hrb:107,hv:303,ts:1020},{hb:290,hrc:31,hrb:106,hv:292,ts:990},
+  {hb:277,hrc:30,hrb:105,hv:285,ts:971},{hb:271,hrc:29,hrb:104,hv:277,ts:941},{hb:264,hrc:28,hrb:103,hv:271,ts:892},
+  {hb:262,hrc:27,hrb:103,hv:262,ts:880},{hb:255,hrc:26,hrb:102,hv:258,ts:870},{hb:250,hrc:25,hrb:101,hv:255,ts:853},
+  {hb:245,hrc:24,hrb:100,hv:252,ts:838},{hb:240,hrc:23,hrb:100,hv:247,ts:824},{hb:233,hrc:22,hrb:99,hv:241,ts:794},
+  {hb:229,hrc:21,hrb:98,hv:235,ts:775},{hb:223,hrc:20,hrb:97,hv:227,ts:755},{hb:216,hrc:19,hrb:96,hv:222,ts:716},
+  {hb:212,hrc:18,hrb:95,hv:218,ts:706},{hb:208,hrc:17,hrb:95,hv:210,ts:696},{hb:203,hrc:16,hrb:94,hv:201,ts:680},
+  {hb:199,hrc:15,hrb:93,hv:199,ts:667},{hb:191,hrc:14,hrb:92,hv:197,ts:657},{hb:190,hrc:13,hrb:92,hv:186,ts:648},
+  {hb:186,hrc:12,hrb:91,hv:184,ts:637},{hb:183,hrc:11,hrb:90,hv:183,ts:617},{hb:180,hrc:10,hrb:89,hv:180,ts:608},
+  {hb:175,hrc:9,hrb:88,hv:178,ts:685},{hb:170,hrc:7,hrb:87,hv:175,ts:559},{hb:167,hrc:6,hrb:86,hv:172,ts:555},
+  {hb:166,hrc:5,hrb:86,hv:168,ts:549},{hb:163,hrc:4,hrb:85,hv:162,ts:539},{hb:160,hrc:3,hrb:84,hv:160,ts:535},
+  {hb:156,hrc:2,hrb:83,hv:158,ts:530},{hb:154,hrc:1,hrb:82,hv:152,ts:515},
+  {hb:149,hrc:null,hrb:81,hv:149,ts:500},{hb:147,hrc:null,hrb:80,hv:147,ts:490},{hb:143,hrc:null,hrb:79,hv:146,ts:482},
+  {hb:141,hrc:null,hrb:78,hv:144,ts:481},{hb:139,hrc:null,hrb:77,hv:142,ts:480},{hb:137,hrc:null,hrb:76,hv:140,ts:475},
+  {hb:135,hrc:null,hrb:75,hv:137,ts:467},{hb:131,hrc:null,hrb:74,hv:134,ts:461},{hb:127,hrc:null,hrb:72,hv:129,ts:451},
+  {hb:121,hrc:null,hrb:70,hv:127,ts:431},{hb:116,hrc:null,hrb:68,hv:124,ts:422},{hb:114,hrc:null,hrb:67,hv:121,ts:412},
+  {hb:111,hrc:null,hrb:66,hv:118,ts:402},{hb:107,hrc:null,hrb:64,hv:115,ts:382},{hb:105,hrc:null,hrb:62,hv:112,ts:378},
+  {hb:103,hrc:null,hrb:61,hv:108,ts:373},{hb:95,hrc:null,hrb:56,hv:104,ts:null},{hb:90,hrc:null,hrb:52,hv:95,ts:null},
+  {hb:81,hrc:null,hrb:41,hv:85,ts:null},{hb:76,hrc:null,hrb:37,hv:80,ts:null},
+];
+
 const MENU = [
   { id: 'home', label: 'Home', icon: '⌂' },
   { id: 'conversions', label: 'Conversions', icon: '↻', children: [
@@ -152,6 +186,7 @@ const MENU = [
   { id: 'reference-charts', label: 'Reference Charts', icon: '⊞', children: [
     { id: 'wheel-shapes', label: 'Standard Wheel Shapes', icon: '◯' },
     { id: 'grit-size', label: 'Grit Size Chart', icon: '▦' },
+    { id: 'hardness-chart', label: 'Hardness Chart', icon: '⬡' },
     { id: 'glossary', label: 'Grinding Glossary', icon: '⊡' },
     { id: 'troubleshooting', label: 'Troubleshooting', icon: '⚑' },
   ]},
@@ -171,6 +206,7 @@ const PAGE_TITLES = {
   'surface-finish': 'Surface Finish Chart',
   'wheel-shapes': 'Standard Wheel Shapes',
   'grit-size': 'Grit Size Chart',
+  'hardness-chart': 'Hardness Chart',
   'glossary': 'Grinding Glossary',
   'troubleshooting': 'Troubleshooting',
   'traverse-dressing': 'Traverse Dressing',
@@ -196,6 +232,7 @@ const INFO_TEXT = {
   'kerf-loss': '<p><strong>Kerf Loss Calculator</strong></p><p>Calculates material lost during cutting operations.</p><p><strong>Formula:</strong> Loss = blade width × number of cuts × workpiece length</p>',
   'troubleshooting': '<p><strong>Troubleshooting Guide</strong></p><p>Quick-reference for diagnosing grinding problems (burn, chatter, finish, out-of-round) and adjusting wheel behaviour (hard vs soft) during vitrified CBN trials.</p>',
   'glossary': '<p><strong>Grinding Glossary</strong></p><p>Over 100 terms covering abrasives, bond systems, grinding operations, process parameters, surface finish, wheel specs, dressing, machine types, defects, and workpiece materials.</p><p>Use the search box to find any term or tap a category to browse.</p>',
+  'hardness-chart': '<p><strong>Steel Hardness Conversion Table</strong></p><p>Approximate hardness conversion between Brinell (HB), Rockwell C (HRC), Rockwell B (HRB), and Vickers (HV) scales.</p><p>Enter a value in any scale to find the nearest equivalent in all other scales. Values are approximate and for guidance only.</p>',
   'grit-size': '<p><strong>Grit Size Comparison Chart</strong></p><p>Cross-reference between grit size standards: Mesh/Size (µm), FEPA designation (Diamond &amp; CBN), ANSI grit size, US grit number, and JIS size.</p><p>Finer grits (higher mesh numbers) produce smoother surface finishes.</p>',
   'wheel-shapes': '<p><strong>Standard Wheel Shapes</strong></p><p>Cross-section reference for standard grinding wheel profiles per ANSI/ISO designations.</p><p>Tap any shape to see its designation. Shapes are grouped by type: straight (1-series), cup/dish (2/6/9/11/12/15-series), flared (3/4/14-series), and recessed (1A1R, 1A1SP, etc.).</p>',
   'surface-finish': '<p><strong>Surface Finish Comparison Chart</strong></p><p>Reference chart comparing roughness parameters:</p><p><strong>Ra</strong> — Arithmetical Average roughness</p><p><strong>RMS (Rq)</strong> — Root Mean Square roughness</p><p><strong>Rt</strong> — Highest peak-to-valley height in an assigned length (Rt = Rp + Rv)</p><p><strong>Rz</strong> — Average distance between 5 deepest valleys &amp; peaks</p>',
@@ -340,6 +377,10 @@ const App = {
           <div class="home-tile" onclick="App.navigateTo('glossary')">
             <div class="tile-icon">⊡</div>
             <div class="tile-label">Grinding Glossary</div>
+          </div>
+          <div class="home-tile" onclick="App.navigateTo('hardness-chart')">
+            <div class="tile-icon">⬡</div>
+            <div class="tile-label">Hardness Chart</div>
           </div>
           <div class="home-tile" onclick="App.navigateTo('q-prime')">
             <div class="tile-icon">↓</div>
@@ -1068,6 +1109,107 @@ const App = {
       `;
     },
 
+    // ===== HARDNESS CHART =====
+    'hardness-chart'() {
+      const rows = HARDNESS_DATA.map(r => {
+        const hb = r.hb !== null ? r.hb : '';
+        const hrc = r.hrc !== null ? r.hrc : '';
+        const hrb = r.hrb !== null ? r.hrb : '';
+        const hv = r.hv !== null ? r.hv : '';
+        const ts = r.ts !== null ? r.ts : '';
+        return `<tr><td>${hb}</td><td>${hrc}</td><td>${hrb}</td><td>${hv}</td><td>${ts}</td></tr>`;
+      }).join('');
+      return `
+        <div class="calc-section">
+          <div class="calc-card">
+            <div class="calc-card-header">STEEL HARDNESS CONVERSION CALCULATOR</div>
+            <div class="calc-card-body">
+              <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.5;">Enter a value in any field and click Calculate. The nearest equivalent values are shown, or zero if out of range.</p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Brinell HB</label>
+                  <input class="form-input" type="number" id="hc-hb" inputmode="decimal" placeholder="HB">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Rockwell C HRC</label>
+                  <input class="form-input" type="number" id="hc-hrc" inputmode="decimal" placeholder="HRC">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Rockwell B HRB</label>
+                  <input class="form-input" type="number" id="hc-hrb" inputmode="decimal" placeholder="HRB">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Vickers HV</label>
+                  <input class="form-input" type="number" id="hc-hv" inputmode="decimal" placeholder="HV">
+                </div>
+              </div>
+              <div class="btn-row" style="margin-top:10px;">
+                <button class="btn btn-primary" onclick="HardnessCalc.convert()">Calculate</button>
+                <button class="btn btn-reset" onclick="HardnessCalc.reset()">Reset</button>
+              </div>
+            </div>
+          </div>
+          <div class="result-card" id="hc-results" style="display:none;">
+            <div class="result-card-header">RESULT</div>
+            <div class="result-row">
+              <span class="result-label">Brinell HB</span>
+              <span class="result-unit">HB</span>
+              <span class="result-value" id="hc-res-hb">--</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Rockwell C</span>
+              <span class="result-unit">HRC</span>
+              <span class="result-value" id="hc-res-hrc">--</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Rockwell B</span>
+              <span class="result-unit">HRB</span>
+              <span class="result-value" id="hc-res-hrb">--</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Vickers</span>
+              <span class="result-unit">HV</span>
+              <span class="result-value" id="hc-res-hv">--</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Tensile Strength</span>
+              <span class="result-unit">N/mm²</span>
+              <span class="result-value" id="hc-res-ts">--</span>
+            </div>
+          </div>
+          <div class="calc-card" style="margin-top:0;">
+            <div class="calc-card-header">REFERENCE TABLE — STEEL HARDNESS CONVERSION</div>
+            <div class="sf-table-wrap">
+              <table class="sf-table hardness-table">
+                <thead>
+                  <tr class="sf-header-top">
+                    <th>Brinell<div class="sf-header-sub">HB</div></th>
+                    <th>Rockwell<div class="sf-header-sub">HRC</div></th>
+                    <th>Rockwell<div class="sf-header-sub">HRB</div></th>
+                    <th>Vickers<div class="sf-header-sub">HV</div></th>
+                    <th>N/mm²<div class="sf-header-sub">Tensile</div></th>
+                  </tr>
+                  <tr class="sf-header-units">
+                    <th>3000kg 10mm Ball</th>
+                    <th>150kg Brale</th>
+                    <th>100kg 1/16" Ball</th>
+                    <th>Diamond Pyramid 120kg</th>
+                    <th>Approx</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </div>
+          <div class="sf-notes">
+            <div class="sf-note">All values are approximate. Conversion charts are provided for guidance only as each scale uses different methods of measuring hardness.</div>
+          </div>
+        </div>
+      `;
+    },
+
     // ===== SURFACE FINISH CHART =====
     'surface-finish'() {
       const data = [
@@ -1478,6 +1620,67 @@ const Calc = {
 };
 
 // ===== SCIENTIFIC CALCULATOR =====
+const HardnessCalc = {
+  convert() {
+    const fields = [
+      { id: 'hc-hb', key: 'hb' },
+      { id: 'hc-hrc', key: 'hrc' },
+      { id: 'hc-hrb', key: 'hrb' },
+      { id: 'hc-hv', key: 'hv' },
+    ];
+    let inputKey = null;
+    let inputVal = null;
+    for (const f of fields) {
+      const el = document.getElementById(f.id);
+      if (el && el.value !== '') {
+        inputKey = f.key;
+        inputVal = parseFloat(el.value);
+        break;
+      }
+    }
+    if (inputKey === null || isNaN(inputVal)) return;
+
+    let best = null;
+    let bestDist = Infinity;
+    for (const row of HARDNESS_DATA) {
+      if (row[inputKey] === null) continue;
+      const dist = Math.abs(row[inputKey] - inputVal);
+      if (dist < bestDist) {
+        bestDist = dist;
+        best = row;
+      }
+    }
+
+    const resEl = document.getElementById('hc-results');
+    if (!best) {
+      if (resEl) resEl.style.display = 'none';
+      return;
+    }
+    if (resEl) resEl.style.display = '';
+
+    const set = (id, val) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (val === null) { el.textContent = '0'; el.classList.add('empty'); }
+      else { el.textContent = val; el.classList.remove('empty'); }
+    };
+    set('hc-res-hb', best.hb);
+    set('hc-res-hrc', best.hrc);
+    set('hc-res-hrb', best.hrb);
+    set('hc-res-hv', best.hv);
+    set('hc-res-ts', best.ts);
+  },
+
+  reset() {
+    ['hc-hb','hc-hrc','hc-hrb','hc-hv'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    const resEl = document.getElementById('hc-results');
+    if (resEl) resEl.style.display = 'none';
+  },
+};
+
 const SciCalc = {
   expr: '',
   display: '0',

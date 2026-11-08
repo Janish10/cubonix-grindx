@@ -849,7 +849,8 @@ body {
   color: var(--navy-dark);
 }
 
-.grit-table tbody td:empty {
+.grit-table tbody td:empty,
+.hardness-table tbody td:empty {
   background: #f0f1f5;
 }
 
